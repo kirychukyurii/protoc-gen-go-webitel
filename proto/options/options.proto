@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package options;
+
+import "google/protobuf/descriptor.proto";
+
+option go_package = "github.com/kirychukyurii/protoc-gen-go-webitel/gen/go/proto/options";
+
+extend google.protobuf.ServiceOptions {
+  string objclass = 50001;
+}
+
+extend google.protobuf.MethodOptions {
+  Action access = 50002;
+}
+
+enum Action {
+  ACTION_CREATE = 0;
+  ACTION_READ = 1;
+  ACTION_UPDATE = 2;
+  ACTION_DELETE = 3;
+}
