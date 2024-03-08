@@ -8,7 +8,7 @@ import (
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/types/descriptorpb"
 
-	pb "github.com/kirychukyurii/protoc-gen-go-webitel/gen/go/proto/options"
+	pb "buf.build/gen/go/kirychuk/protoc-gen-go-webitel/protocolbuffers/go/proto/options"
 )
 
 type HttpBinding struct {
